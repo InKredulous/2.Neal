@@ -5,6 +5,23 @@
           "name": "",
           "level": 0,
           "experience": 0,
+          "speed": 0,
+          "alignment": "",
+          "currentHP": 0,
+          "maxHP": 0,
+          "armorClass": 0,
+          "currency": {
+            "gp": 0,
+            "sp": 0,
+            "cp": 0,
+            "ep": 0,
+            "pp": 0
+          },
+          "vision": {
+            "darkvision": 0,
+            "infravision": 0,
+            "lightRadius": 0
+          },
           "attributes": {
           "strength": {
             "value": "0",
@@ -84,13 +101,14 @@
         "damageMedium": "",
         "damageLarge": "",
         "damageType": "",
-        ""
+        "speed": 0,
         "range": "",
-        "isEquipped": false,
         "weight": 0,
         "attackBonus": 0,
         "damageBonus": 0,
-        "toHitBonus": 0
+        "isEquipped": false,
+        "isTwoHanded": false,
+        "isRanged": false
       }
     },
     "Gear": {
@@ -111,6 +129,7 @@
         "name": "",
         "description": "",
         "spellLevel": 0,
+        "range": "",
         "isEquipped": false,
         "weight": 0,
         "spellName": "",
@@ -124,7 +143,11 @@
       "name": "",
       "description": "",
       "hitDie": "",
+      "primeRequisite": "",
+      "isSpellCaster": false,
+      "isThief": false,
       "progression": {
+        "proficiencySlots": 0,
         "xpTable": {},
         "toHitBonusByLevel": {},
         "savingThrowsByLevel": {

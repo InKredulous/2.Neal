@@ -1,0 +1,28 @@
+{
+  "id": "2Neal",
+  "title": "2.Neal",
+  "description": "Koibu style 2nd Edition AD&D",
+  "version": "0.0.1",
+  "author": "InKredulous",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "esmodules": ["scripts/main.js"],
+  "styles": ["styles/2neal.css"],
+  "template": "template.json",
+  "documentTypes": {
+    "Actor": {
+      "PC": {},
+      "NPC": {},
+      "Monster": {},
+      "Vehicle": {}
+    }
+  },
+  "system": {
+  "scripts": {},
+  "languages": [],
+  "gridDistance": 5,
+  "gridUnits": "ft"
+}
+}

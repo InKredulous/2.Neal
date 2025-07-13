@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+.sheet-character {
+  font-family: 'Forum', serif;
+  font-size: 16px;
+  background: #fdf6e3;
+  padding: 20px;
+  color: #222;
+  border: 2px solid #aa8c5f;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.sheet-character h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #c1a46d;
+  padding-bottom: 5px;
+}
+
+.sheet-character h2 {
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #d3ba8d;
+  padding-bottom: 3px;
+}
+
+.sheet-character table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.sheet-character th,
+.sheet-character td {
+  border: 1px solid #c9b28a;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.sheet-character th {
+  background-color: #e6d8b6;
+  font-weight: bold;
+}
+
+.sheet-character td input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  font-family: 'Forum', serif;
+  font-size: 16px;
+  background-color: #fffbe6;
+  border: 1px solid #c1a46d;
+  border-radius: 4px;
+}
+
+.sheet-character td input[type="text"]:focus {
+  outline: none;
+  border-color: #b08950;
+  background-color: #fff8d5;
+}
+
+.sheet-character .derived td {
+  background-color: #faf2d4;
+}

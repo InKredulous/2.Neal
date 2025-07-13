@@ -1,0 +1,82 @@
+<form class="sheet-character" autocomplete="off">
+  <h1><input name="name" type="text" value="{{actor.name}}" /></h1>
+
+  <section class="attributes">
+    <h2>Primary Attributes</h2>
+    <table>
+      <tr>
+        <th>Stat</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Strength</td>
+        <td><input type="text" name="system.attributes.strength.value" value="{{system.attributes.strength.value}}" /></td>
+      </tr>
+      <tr>
+        <td>Dexterity</td>
+        <td><input type="text" name="system.attributes.dexterity.value" value="{{system.attributes.dexterity.value}}" /></td>
+      </tr>
+      <tr>
+        <td>Constitution</td>
+        <td><input type="text" name="system.attributes.constitution.value" value="{{system.attributes.constitution.value}}" /></td>
+      </tr>
+      <tr>
+        <td>Intelligence</td>
+        <td><input type="text" name="system.attributes.intelligence.value" value="{{system.attributes.intelligence.value}}" /></td>
+      </tr>
+      <tr>
+        <td>Wisdom</td>
+        <td><input type="text" name="system.attributes.wisdom.value" value="{{system.attributes.wisdom.value}}" /></td>
+      </tr>
+      <tr>
+        <td>Charisma</td>
+        <td><input type="text" name="system.attributes.charisma.value" value="{{system.attributes.charisma.value}}" /></td>
+      </tr>
+      <tr>
+        <td>Perception</td>
+        <td><input type="text" name="system.attributes.perception.value" value="{{system.attributes.perception.value}}" /></td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="derived">
+    <h2>Derived Stats</h2>
+    <table>
+      <tr>
+        <th>Stat</th>
+        <th>Value</th>
+      </tr>
+
+      <!-- Strength -->
+      <tr><td>STR: Attack Bonus</td><td>{{system.attributes.strength.attackBonus}}</td></tr>
+      <tr><td>STR: Damage Bonus</td><td>{{system.attributes.strength.damageBonus}}</td></tr>
+      <tr><td>STR: Weight Allowance</td><td>{{system.attributes.strength.weightAllow}}</td></tr>
+
+      <!-- Dexterity -->
+      <tr><td>DEX: AC Bonus</td><td>{{system.attributes.dexterity.dexAC}}</td></tr>
+      <tr><td>DEX: Attack Bonus</td><td>{{system.attributes.dexterity.attackBonus}}</td></tr>
+
+      <!-- Constitution -->
+      <tr><td>CON: HP Bonus</td><td>{{system.attributes.constitution.hpBonus}}</td></tr>
+      <tr><td>CON: System Shock</td><td>{{system.attributes.constitution.systemShock}}</td></tr>
+      <tr><td>CON: Regeneration</td><td>{{system.attributes.constitution.regeneration}}</td></tr>
+
+      <!-- Intelligence -->
+      <tr><td>INT: Languages Max</td><td>{{system.attributes.intelligence.languagesMax}}</td></tr>
+      <tr><td>INT: Spell Learn Chance</td><td>{{system.attributes.intelligence.spellLearnChance}}</td></tr>
+
+      <!-- Wisdom -->
+      <tr><td>WIS: Spell Failure</td><td>{{system.attributes.wisdom.spellFailure}}</td></tr>
+      <tr><td>WIS: Bonus Spells</td><td>{{system.attributes.wisdom.bonusSpells}}</td></tr>
+
+      <!-- Charisma -->
+      <tr><td>CHA: Henchmen</td><td>{{system.attributes.charisma.henchmenMax}}</td></tr>
+      <tr><td>CHA: Loyalty Base</td><td>{{system.attributes.charisma.loyaltyBase}}</td></tr>
+      <tr><td>CHA: Reaction Bonus</td><td>{{system.attributes.charisma.reactionAdjust}}</td></tr>
+
+      <!-- Perception -->
+      <tr><td>PER: Surprise Bonus</td><td>{{system.attributes.perception.surpriseBonus}}</td></tr>
+      <tr><td>PER: Illusion Immunity</td><td>{{system.attributes.perception.illusionImmunity}}</td></tr>
+    </table>
+  </section>
+</form>

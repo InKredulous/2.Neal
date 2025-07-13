@@ -1,0 +1,97 @@
+{
+  "Actor": {
+    "PC": {
+        "system": {
+          "name": "",
+          "level": 0,
+          "experience": 0,
+          "attributes": {
+          "strength": {
+            "value": "0",
+            "attackBonus": 0,
+            "damageBonus": 0,
+            "weightAllow": 0,
+            "maxPress": 0,
+            "openDoors": 0,
+            "bendBars": 0,
+            "encBase": 0,
+            "encLight": 0,
+            "encMedium": 0,
+            "encHeavy": 0,
+            "encSevere": 0
+          },
+          "dexterity": {
+            "value": "0",
+            "dexAC": 0,
+            "dexAttackBonus": 0
+          },
+          "constitution": {
+            "value": "0",
+            "hpBonus": 0,
+            "systemShock": 0,
+            "saveBonus": 0,
+            "regeneration": "Nill"
+          },
+          "intelligence": {
+            "value": "0",
+            "languagesMax": 0,
+            "spellLevelMax": 0,
+            "spellLearnChance": 0,
+            "spellNumberMax": 0
+          },
+          "wisdom": {
+            "value": "0",
+            "saveBonus": 0,
+            "bonusSpells": "",
+            "spellFailure": 0
+          },
+          "charisma": {
+            "value": "0",
+            "henchmenMax": 0,
+            "loyaltyBase": 0,
+            "reactionAdjust": 0
+          },
+          "perception": {
+            "value": "0",
+            "surpriseBonus": 0,
+            "illusionImmunity": "None"
+          }
+        }
+      }
+      
+    },
+    "NPC": {},
+    "Monster": {}
+  },
+  "Item": {
+    "Armor": {
+
+    },
+    "Weapon": {
+
+    },
+    "Gear": {
+
+    },
+    "Class": {
+      "system": {
+      "name": "",
+      "descripition": "",
+      "hitDie": "",
+      "progression": {
+        "xpTable": {},
+        "toHitBonusByLevel": {},
+        "savingThrowsByLevel": {
+          "ppd":{},
+          "rsw":{},
+          "pp": {},
+          "bw": {},
+          "sp": {}
+        }
+      }
+      }
+      }
+
+    }
+  }
+

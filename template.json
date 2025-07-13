@@ -22,15 +22,15 @@
           },
           "dexterity": {
             "value": "0",
-            "dexAC": 0,
-            "dexAttackBonus": 0
+            "ac": 0,
+            "attackBonus": 0
           },
           "constitution": {
             "value": "0",
             "hpBonus": 0,
             "systemShock": 0,
             "saveBonus": 0,
-            "regeneration": "Nill"
+            "regeneration": "None"
           },
           "intelligence": {
             "value": "0",
@@ -65,18 +65,64 @@
   },
   "Item": {
     "Armor": {
+      "type": "armor",
+      "system": {
+        "name": "",
+        "description": "",
+        "ac": 0,
+        "isEquipped": false,
+        "weight": 0
 
+      }
     },
     "Weapon": {
-
+      "type": "weapon",
+      "system": {
+        "name": "",
+        "description": "",
+        "damageSmall": "",
+        "damageMedium": "",
+        "damageLarge": "",
+        "damageType": "",
+        ""
+        "range": "",
+        "isEquipped": false,
+        "weight": 0,
+        "attackBonus": 0,
+        "damageBonus": 0,
+        "toHitBonus": 0
+      }
     },
     "Gear": {
+      "type": "gear",
+      "system": {
+        "name": "",
+        "description": "",
+        "weight": 0,
+        "isEquipped": false,
+        "isSpellComponent": false,
+        "isContainer": false
+      }
 
     },
+    "Scroll": {
+      "type": "scroll",
+      "system": {
+        "name": "",
+        "description": "",
+        "spellLevel": 0,
+        "isEquipped": false,
+        "weight": 0,
+        "spellName": "",
+        "spellSchool": "",
+        "spellComponents": ""
+      }
+    },
     "Class": {
+      "type": "class",
       "system": {
       "name": "",
-      "descripition": "",
+      "description": "",
       "hitDie": "",
       "progression": {
         "xpTable": {},

@@ -30,6 +30,7 @@ _prepareStrength(attr) {
   let encLight = 0;
   let encMedium = 0;
   let encHeavy = 0;
+  let encSevere = 0;
 
   if (strength < 2) {
     attackBonus = -5;
@@ -147,54 +148,54 @@ _prepareStrength(attr) {
 _prepareDexterity(attr) {
  const dex = parseFloat(attr.value) || 0;
 
-  let dexAC = 0;
+  let ac = 0;
   let attackBonus = 0;
 
   if (dex < 2) {
     attackBonus = -6;
-    dexAC = -5;
+    ac = -5;
   } else if (dex < 3) {
     attackBonus = -4;
-    dexAC = -5;
+    ac = -5;
   } else if (dex < 4) {
     attackBonus = -3;
-    dexAC = -4;
+    ac = -4;
   } else if (dex < 5) {
     attackBonus = -2;
-    dexAC = -3;
+    ac = -3;
   } else if (dex < 6) {
     attackBonus = -1;
-    dexAC = -2;
+    ac = -2;
   } else if (dex < 7) {
     attackBonus = 0;
-    dexAC = -1;
+    ac = -1;
   } else if (dex < 15) {
     attackBonus = 0;
-    dexAC = 0;
+    ac = 0;
   } else if (dex < 16) {
     attackBonus = 0;
-    dexAC = 1;
+    ac = 1;
   } else if (dex < 17) {
     attackBonus = 1;
-    dexAC = 2;
+    ac = 2;
   } else if (dex < 18) {
     attackBonus = 2;
-    dexAC = 3; 
+    ac = 3; 
   } else if (dex < 19) { 
     attackBonus = 2;
-    dexAC = 4;
+    ac = 4;
   } else if (dex < 21) {
     attackBonus = 3;
-    dexAC = 4;
+    ac = 4;
   } else if (dex < 24) {
     attackBonus = 4;
-    dexAC = 5;
+    ac = 5;
   } else if (dex >= 24) {
     attackBonus = 5;
-    dexAC = 6;
+    ac = 6;
   }
 
-  attr.dexAC = dexAC;
+  attr.ac = ac;
   attr.attackBonus = attackBonus;
 }
 _prepareConstitution(attr) {
@@ -316,109 +317,109 @@ _prepareIntelligence(attr) {
   attr.spellNumberMax = spellNumberMax;
 }
 _prepareWisdom(attr) {
-  const willpower = parseFloat(attr.value) || 0;
+  const wisdom = parseFloat(attr.value) || 0;
 
   let saveBonus = 0;
   let bonusSpells = "0";
   let spellFailure = 0;
 
-  if (willpower < 2) {
+  if (wisdom < 2) {
     saveBonus = -6;
     bonusSpells = "0";
     spellFailure = 80;
-  } else if (willpower < 3) {
+  } else if (wisdom < 3) {
     saveBonus = -4;
     bonusSpells = "0";
     spellFailure = 60;
-  } else if (willpower < 4) {
+  } else if (wisdom < 4) {
     saveBonus = -3;
     bonusSpells = "0";
     spellFailure = 50;
-  } else if (willpower < 5) {
+  } else if (wisdom < 5) {
     saveBonus = -2;
     bonusSpells = "0";
     spellFailure = 45;
-  } else if (willpower < 6) {
+  } else if (wisdom < 6) {
     saveBonus = -1;
     bonusSpells = "0";
     spellFailure = 40;
-  } else if (willpower < 7) {
+  } else if (wisdom < 7) {
     saveBonus = -1;
     bonusSpells = "0";
     spellFailure = 35;
-  } else if (willpower < 8) {
+  } else if (wisdom < 8) {
     saveBonus = -1;
     bonusSpells = "0";
     spellFailure = 30;
-  } else if (willpower < 9) {
+  } else if (wisdom < 9) {
     saveBonus = 0;
     bonusSpells = "0";
     spellFailure = 25;
-  } else if (willpower < 10) {
+  } else if (wisdom < 10) {
     saveBonus = 0;
     bonusSpells = "0";
     spellFailure = 20;
-  } else if (willpower < 11) {
+  } else if (wisdom < 11) {
     saveBonus = 0;
     bonusSpells = "0";
     spellFailure = 15;
-  } else if (willpower < 12) {
+  } else if (wisdom < 12) {
     saveBonus = 0;
     bonusSpells = "0";
     spellFailure = 10;
-  } else if (willpower < 13) {
+  } else if (wisdom < 13) {
     saveBonus = 0;
     bonusSpells = "0";
     spellFailure = 5;
-  } else if (willpower < 14) {
+  } else if (wisdom < 14) {
     saveBonus = 0;
     bonusSpells = "1st x1";
     spellFailure = 0;
-  } else if (willpower < 15) {
+  } else if (wisdom < 15) {
     saveBonus = 0;
     bonusSpells = "1st x2";
     spellFailure = 0;
-  } else if (willpower < 16) {
+  } else if (wisdom < 16) {
     saveBonus = 1;
     bonusSpells = "1st x2, 2nd x1";
     spellFailure = 0;
-  } else if (willpower < 17) {
+  } else if (wisdom < 17) {
     saveBonus = 2;
     bonusSpells = "1st x2, 2nd x2";
     spellFailure = 0;
-  } else if (willpower < 18) {
+  } else if (wisdom < 18) {
     saveBonus = 3;
     bonusSpells = "1st x2, 2nd x2, 3rd x1";
     spellFailure = 0;
-  } else if (willpower < 19) {
+  } else if (wisdom < 19) {
     saveBonus = 4;
     bonusSpells = "1st x2, 2nd x2, 3rd x1, 4th x1";
     spellFailure = 0;
-  } else if (willpower < 20) {
+  } else if (wisdom < 20) {
     saveBonus = 4;
     bonusSpells = "1st x3, 2nd x2, 3rd x2, 4th x1";
     spellFailure = 0;
-  } else if (willpower < 21) {
+  } else if (wisdom < 21) {
     saveBonus = 4;
     bonusSpells = "1st x3, 2nd x3, 3rd x2, 4th x2";
     spellFailure = 0;
-  } else if (willpower < 22) {
+  } else if (wisdom < 22) {
     saveBonus = 4;
     bonusSpells = "1st x3, 2nd x3, 3rd x3, 4th x2, 5th x1";
     spellFailure = 0;
-  } else if (willpower < 23) {
+  } else if (wisdom < 23) {
     saveBonus = 4;
     bonusSpells = "1st x3, 2nd x3, 3rd x3, 4th x3, 5th x2";
     spellFailure = 0;
-  } else if (willpower < 24) {
+  } else if (wisdom < 24) {
     saveBonus = 4;
     bonusSpells = "1st x4, 2nd x3, 3rd x3, 4th x3, 5th x2, 6th x1";
     spellFailure = 0;
-  } else if (willpower < 25) {
+  } else if (wisdom < 25) {
     saveBonus = 4;
     bonusSpells = "1st x4, 2nd x3, 3rd x3, 4th x3, 5th x3, 6th x2";
     spellFailure = 0;
-  } else if (willpower >= 25) {
+  } else if (wisdom >= 25) {
     saveBonus = 4;
     bonusSpells = "1st x4, 2nd x3, 3rd x3, 4th x3, 5th x3, 6th x3, 7th x1";
     spellFailure = 0;

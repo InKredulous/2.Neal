@@ -1,7 +1,7 @@
-export class CharacterSheet2Neal extends foundry.appv1.sheets.ActorSheet {
+export class CharacterSheet2Neal extends ActorSheet {
   /** @override */
   static get defaultOptions() {
-    return mergeObject(super.defaultOptions, {
+    return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ['2neal', 'sheet', 'actor'],
       template: 'systems/2neal/templates/actor/character-sheet.hbs',
       width: 800,
@@ -11,10 +11,10 @@ export class CharacterSheet2Neal extends foundry.appv1.sheets.ActorSheet {
   }
 
   /** @override */
-  getData() {
-    const data = super.getData();
-    data.system = this.actor.system; // Makes the system data available in the sheet
-    data.actor = this.actor;         // Makes actor reference available
+  async getData(options) {
+    const data = await super.getData(options);
+    data.system = this.actor.system;
+    data.actor = this.actor;
     return data;
   }
 
@@ -22,13 +22,12 @@ export class CharacterSheet2Neal extends foundry.appv1.sheets.ActorSheet {
   activateListeners(html) {
     super.activateListeners(html);
 
-    // Example: handle a click on a rollable element
-    html.find('.rollable').click(this._onRoll.bind(this));
+    // Handle clickable rolls
+    html.find('.rollable').on('click', this._onRoll.bind(this));
   }
 
   /**
    * Handle clicking a rollable element.
-   * You can expand this later for specific rolls (attacks, saves, etc.).
    */
   async _onRoll(event) {
     event.preventDefault();

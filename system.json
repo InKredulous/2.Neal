@@ -17,6 +17,12 @@
       "NPC": {},
       "Monster": {},
       "Vehicle": {}
+    },
+    "Item": {
+      "Armor": {},
+      "Weapon": {},
+      "Gear": {},
+      "Class": {}
     }
   },
   "system": {
